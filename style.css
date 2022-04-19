@@ -1,0 +1,60 @@
+body{
+    background-color: #8E3200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container{
+    width: 65vw;
+    background-color: #D7A86E;
+    margin: auto;
+    margin-top: 8rem;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 10px 15px 10px 5px rgba(0, 0, 0, 0.575);
+
+    flex-wrap: wrap;
+}
+
+p{
+    font-size: 17px;
+}
+
+.btn-ok{
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    background-color: #A64B2A;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.587);
+}
+
+input{
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 25%;
+    margin-left: 5px;
+}
+.title-input{
+    font-size: 20px;
+    font-weight: bold;
+}
+.descreve-input{
+        font-size: 15px;
+}
+
+#itens{
+    margin-bottom: 10px;
+    text-align: center;
+}
+#aviso{
+    margin-top: 10px;
+}
+#msg{
+    margin-top: 10px;
+}
