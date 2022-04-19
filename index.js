@@ -246,7 +246,7 @@ function escolhe_jogada(){
     else{
         aux = jogada_pc()
         rodada_pcs -= aux
-        msg.innerText = `ele retirou ${aux} peças.`
+        msg.innerText = `PC retirou ${aux} peças.`
     }
 }
 
