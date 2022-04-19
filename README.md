@@ -1,6 +1,8 @@
-<h2>Jogo NIM</h2>
+<a href="https://pedrofnseca.github.io/Jogo-NIM/"> <h2> Jogo NIM </h2> </a> 
 
-<h3>https://pedrofnseca.github.io/Jogo-NIM/</h3>
+<h3>Estimula a realização de cálculos mentais para conseguir ganhar do adversário.</h3>
+
+<h4>O jogo se inicia com um numero predefinido de peças pelo usuario. Cada jogada consiste em retirar algumas peças dentre um total estabelecido. Ganha o jogador que retirar a última peça.</h4>
 
 <br>
 
@@ -13,3 +15,5 @@ Quando comecei a criar esse projeto pela primeira vez em html, encontrei algumas
 <br>
 
 Te desafio a jogar e tentar ganhar do PC, ele tem uma forma de jogar bem peculiar!🧐
+
+<a href="https://pedrofnseca.github.io/Jogo-NIM/">JOGAR</a>
