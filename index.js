@@ -18,7 +18,7 @@ function telaIntroducao(){
 
     container.innerHTML += '<p>As jogadas são feitas alternadamente, e deve retirar uma quantidade de peças, dentre um total que varia de acordo com o que foi definido. O ganhador é aquele que retirar a ultima peça da mesa.</p>'
 
-    container.innerHTML += '<button onclick="telaParametros()" class="btn-ok">OK</button>'
+    container.innerHTML += '<button onclick="telaParametros()" class="btn">OK</button>'
 }
 
 
@@ -39,9 +39,9 @@ function telaParametros(){
 
     container.innerHTML += '<label for="max-pcs" class="title-input">Peças por jogada:</label>'
     container.innerHTML += '<input id="max-pcs" type="number">'
-    container.innerHTML += ' <p class="descreve-input">Quantidade de peças que cada jogador poderá pegar por vez</p>'
+    container.innerHTML += '<p class="descreve-input">Quantidade de peças que cada jogador poderá pegar por vez</p>'
 
-    container.innerHTML += '<button onclick="verifica()" class="btn-ok">OK</button>'
+    container.innerHTML += '<button onclick="verifica()" class="btn">OK</button>'
 }
 
 
@@ -59,7 +59,7 @@ function telaJogo(){
     container.innerHTML += '<div id="pcs-atual"></div>'
     container.innerHTML += '<label for="pcs-user">Quantas peças?</label>'
     container.innerHTML += '<input id="pcs-user" type="number">'
-    container.innerHTML += '<button class="btn-ok" id="btn-jogar" onclick="jogoNim()" >retirar</button>'
+    container.innerHTML += '<button class="btn" id="btn-jogar" onclick="jogoNim()" >retirar</button>'
 
     container.innerHTML += '</div>'
 
@@ -80,7 +80,7 @@ function telaGanhador(){
     container.innerHTML += '<div id="jogar-novamente">'
     
     container.innerHTML += '<label for="jogar-dnv">Que tal mais uma partida?</label>'
-    container.innerHTML += '<button onclick="telaParametros()" class="btn-ok">Vamos</button>'
+    container.innerHTML += '<button onclick="telaParametros()" class="btn">Vamos</button>'
 
     container.innerHTML += '</div>'
 
