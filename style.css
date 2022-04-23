@@ -6,15 +6,19 @@ body{
 #container{
     width: 65vw;
     background-color: #D7A86E;
-    margin: auto;
-    margin-top: 8rem;
+    /* margin: auto; */
+    /* margin-top: 8rem; */
     color: black;
     text-align: center;
     padding: 10px;
     border-radius: 30px;
     box-shadow: 10px 15px 10px 5px rgba(0, 0, 0, 0.575);
-
     flex-wrap: wrap;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 p{
