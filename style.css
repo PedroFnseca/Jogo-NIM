@@ -21,7 +21,7 @@ p{
     font-size: 17px;
 }
 
-.btn-ok{
+.btn{
     border: none;
     cursor: pointer;
     color: white;
@@ -30,6 +30,7 @@ p{
     padding: 5px;
     border-radius: 5px;
     box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.587);
+    margin-left: 5px;
 }
 
 input{
