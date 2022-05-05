@@ -1,7 +1,7 @@
 body{
     /* background-color: #8E3200; cor antiga*/
     background-image: url("fundo.png");
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Arial <- Antiga */
 }
 
 #container{
