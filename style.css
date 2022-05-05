@@ -9,6 +9,7 @@ body{
     /* background-color: #D7A86E; cor antiga */ 
     background-color: #8E3200;
     color: #D7A86E;
+    text-shadow: black 0.1em 0.1em 0.2em;
     text-align: center;
     padding: 10px;
     border-radius: 30px;
