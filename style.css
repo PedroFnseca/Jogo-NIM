@@ -1,13 +1,13 @@
 body{
-    background-color: #8E3200;
+    /* background-color: #8E3200; cor antiga*/
+    background-image: url("fundo.png");
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #container{
     width: 65vw;
-    background-color: #D7A86E;
-    /* margin: auto; */
-    /* margin-top: 8rem; */
+    /* background-color: #D7A86E; cor antiga */ 
+    background-color: #8E3200;
     color: black;
     text-align: center;
     padding: 10px;
