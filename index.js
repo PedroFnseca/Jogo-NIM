@@ -18,6 +18,8 @@ function telaIntroducao(){
 
     container.innerHTML += '<p>As jogadas são feitas alternadamente, e deve retirar uma quantidade de peças, dentre um total que varia de acordo com o que foi definido. O ganhador é aquele que retirar a ultima peça da mesa.</p>'
 
+    container.innerHTMl += '<h3><a href="https://github.com/pedroFnseca/Jogo-NIM/blob/main/README.md">sobre/regras</a></h3>'
+    
     container.innerHTML += '<button onclick="telaParametros()" class="btn">OK</button>'
 }
 
