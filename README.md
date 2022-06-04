@@ -13,30 +13,30 @@ Quando comecei a criar esse projeto pela primeira vez em html, encontrei algumas
 <br>
 
 <h1>COMO JOGAR?</h1>
-Ao pedir para testarem o jogo algumas pessoas não conseguiram entender muito bem o funcionamento do jogo, então resolvi adicionar esse topico, para ficar melhor a experiência de quem for jogar
+Ao pedir para testarem o jogo algumas pessoas não conseguiram entender muito bem o funcionamento do jogo, então resolvi adicionar esse tópico, para melhorar a experiência do jogador.
 
 <br>
 
-<h2>Defina os parametros da rodada</h2>
+<h2>Defina os parâmetros da rodada</h2>
 
 ![image](https://user-images.githubusercontent.com/97262778/172015872-6a9bbe19-7d1a-441d-b734-48a2066d30a7.png)
 
-- A quantidade total de peças se refere a quantidade total de peças que terá durante a rodada
-- Já as peças por rodada é a quantiade de  peças que cada jogador poderá coletar no máximo por vez (as jogadas acontem alternadamente)
+- O total de peças se refere a quantidade total de peças que terá durante uma unica rodada.
+- Já as "peças por rodada" é a quantidade de peças que cada jogador poderá coletar no máximo por vez (as jogadas acontecem alternadamente).
 
 <h2>Jogando</h2>
 
 ![image](https://user-images.githubusercontent.com/97262778/172015912-76255009-cd0f-41ca-b7f7-7f166875f4d8.png)
 
-- O jogo irá decidir quem irá começar e avisar quem começou, apresentará a quantidade que ainda resta no tabuleiro
-- O aviso ele serve para dizer quantas peças pode ser retirado naquela vez (foi definido o máximo na rodada anterior)
+- O jogo irá decidir quem vai começar e apresentará a quantidade de peças que ainda resta no tabuleiro.
+- O aviso serve para informar quantas peças podem ser retiradas naquela vez (foi definido o máximo na rodada anterior).
 
 <h2>Dicas</h2>
 
 ![image](https://user-images.githubusercontent.com/97262778/172016245-5fefa9de-e901-4596-aa42-ae6f6940d85c.png)
 
-- Para conseguir ganhar da maquina existe algumas tecnicas matemáticas para conseguir ganhar (não é muito dificil), mas pense em algum método, pois existe!
-- Quando você puder retire todas as peças (assim você irá ganhar) exemplo -> caso o total tenha 2 peças e no aviso permita retirar ≤ 2 retire.
+- Existem algumas tecnicas matemáticas para conseguir ganhar da máquina (não é muito dificil), mas pense em algum método, pois existe!
+- Quando você puder, retire todas as peças (assim você irá ganhar) exemplo -> caso o total tenha 2 peças e no aviso permita ≤ 2 retire.
 
 #
 
