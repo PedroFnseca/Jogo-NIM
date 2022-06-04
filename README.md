@@ -40,5 +40,5 @@ Ao pedir para testarem o jogo algumas pessoas não conseguiram entender muito be
 
 #
 
-<h1>Te desafio a jogar e tentar ganhar do PC, ele tem uma forma de jogar bem peculiar!🧐 <a href="https://pedrofnseca.github.io/Jogo-NIM/">JOGAR</a></h2>
+<h3>Te desafio a jogar e tentar ganhar do PC, ele tem uma forma de jogar bem peculiar!🧐 <a href="https://pedrofnseca.github.io/Jogo-NIM/">JOGAR</a></h3>
 
