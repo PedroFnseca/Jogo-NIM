@@ -63,3 +63,7 @@ input{
 #msg{
     margin-top: 10px;
 }
+
+a{
+    color: grey;
+}
