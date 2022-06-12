@@ -14,7 +14,7 @@ function telaIntroducao(){
 
     container.innerHTML += '<h3>Tente ganhar da maquina!</h3>'
 
-    container.innerHTML += '<p>Para jogar esse jogo é nescessario dar uma quantidade de peças iniciais.</p>'
+    container.innerHTML += '<p>Para jogar esse jogo é necessário dar uma quantidade de peças iniciais.</p>'
 
     container.innerHTML += '<p>As jogadas são feitas alternadamente, e deve retirar uma quantidade de peças, dentre um total que varia de acordo com o que foi definido. O ganhador é aquele que retirar a ultima peça da mesa.</p>'
 
