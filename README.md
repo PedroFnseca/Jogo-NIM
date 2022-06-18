@@ -1,4 +1,5 @@
-> <a href="https://pedrofnseca.github.io/Jogo-NIM/"> <h1> Jogo NIM </h1> </a> 
+> # Jogo NIM
+>  - ## <a href="https://pedrofnseca.github.io/Jogo-NIM/">JOGAR<a>
 > ### Estimula a realização de cálculos mentais para conseguir ganhar do adversário.
 
 <br>
