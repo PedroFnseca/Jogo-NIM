@@ -1,5 +1,3 @@
-teste
-
 > # Jogo NIM
 >  - ## <a href="https://pedrofnseca.github.io/Jogo-NIM/">JOGAR<a>
 > ### Estimula a realização de cálculos mentais para conseguir ganhar do adversário.
