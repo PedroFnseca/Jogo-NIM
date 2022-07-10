@@ -1,5 +1,5 @@
 var container = document.getElementById('container') // declarado como global para diminuir linhas de codigo
-
+var emoji = '' // variavel que irá armazenar o emoji escolhido
 
 //===========================================================================================//
 
@@ -42,6 +42,11 @@ function telaParametros(){
     container.innerHTML += '<label for="max-pcs" class="title-input">Peças por jogada:</label>'
     container.innerHTML += '<input id="max-pcs" type="number">'
     container.innerHTML += '<p class="descreve-input">Quantidade de peças que cada jogador poderá pegar por vez</p>'
+
+    container.innerHTML += '<label class="title-input" >Escolha um emoji</label>'
+    container.innerHTML += '<select id="emoji"> <option value="🔴" >🔴</option> <option value="⚫" >⚫</option> <option value="👽" >👽</option> <option value="👾" >👾</option> <option value="🧑🏻‍💻" >🧑🏻‍💻</option> <option value="🦖" >🦖</option> </select>'
+
+    container.innerHTML += '<br><br>'
 
     container.innerHTML += '<button onclick="verifica()" class="btn">OK</button>'
 }
@@ -98,6 +103,11 @@ var rodada_pcs, max_pcs, vencedor
 
 function verifica(){
     // Onde se faz as verificações dos parametros e passa para a proxima tela se tudo estiver de acordo
+
+
+    // Atribuindo valor para o emoji
+    let select = document.getElementById('emoji') 
+    emoji = select.value
 
     rodada_pcs = document.getElementById('rodada-pcs') // Quantidade total de peças no jogo
     max_pcs = document.getElementById('max-pcs') // Maximo de peças que podem ser retiradas
@@ -183,7 +193,7 @@ function imprime(){
     itens.innerText = '' // Limpa para enviar o valor atualizado
 
     for (let i = 0; i < rodada_pcs; i++) {
-        itens.innerText += ' 🔴 '
+        itens.innerText += ` ${emoji} ` 
     }
 
     // Atualiza o valor das peças
