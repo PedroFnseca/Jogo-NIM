@@ -1,18 +1,21 @@
 body{
-    background-image: url("fundo.png");
+    /*background-image: url("fundo.png");*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(21, 15, 129) 0%, rgb(44, 44, 153) 20%, rgba(25,126,147,1) 305%);
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Arial <- Antiga */
 }
 
 #container{
     width: 65vw;
-    /* background-color: #D7A86E; cor antiga */ 
-    background-color: #8E3200;
+    background-color: #07e6ff1a;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
     text-align: center;
     padding: 10px;
+
+    border: solid 1px rgba(0, 0, 0, 0.036);
     border-radius: 30px;
-    box-shadow: 10px 15px 10px 5px rgba(0, 0, 0, 0.575);
+    box-shadow: 10px 15px 10px 5px rgba(0, 0, 0, 0.524);
     flex-wrap: wrap;
 
     position: absolute;
@@ -20,7 +23,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 p{
     font-size: 17px;
 }
@@ -28,12 +30,13 @@ p{
 .btn{
     border: none;
     cursor: pointer;
-    color: white;
+    color: whitesmoke;
     font-size: 15px;
-    background-color: #A64B2A;
+    background-color: #150e77;
+    border: solid 0.1px rgba(0, 0, 0, 0.072);
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.587);
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.587);
     margin-left: 5px;
 }
 
@@ -65,5 +68,5 @@ input{
 }
 
 a{
-    color: grey;
+    color: rgb(255, 255, 255);
 }
