@@ -53,6 +53,8 @@
  - ### Deixar o usuário escolher como será a peça do tabuleiro ex: 🔴, ⚫, 👾, 🧑‍💻 ...
  - ### interface melhorada.
 
+<br> 
+ 
 > # Futuras atualizações 🚀
 > ### Em busca de melhorias nesse projeto ...
 
