@@ -55,5 +55,4 @@
 
  - ### Adicionar um modo novo, onde seja mais dificil de ganhar do computador, trazendo um novo desafio para o jogador!
     - ### Para realizar esse modo o algotimo irá realizar calculos matemáticos para ganhar do usuário, tornando assim impossível dele ganhar.
- - ### Melhorar a interface adicionando modo claro e escuro.
  - ### Deixar o usuário escolher como será a peça do tabuleiro ex: 🔴, ⚫, 👾, 🧑‍💻 ...
