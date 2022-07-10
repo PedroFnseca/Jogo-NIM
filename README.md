@@ -49,10 +49,15 @@
 
 <br>
 
+> # Ultimas atualizações 📰🔭
+ - ### Deixar o usuário escolher como será a peça do tabuleiro ex: 🔴, ⚫, 👾, 🧑‍💻 ...
+ - ### interface melhorada.
 
+<br> 
+ 
 > # Futuras atualizações 🚀
 > ### Em busca de melhorias nesse projeto ...
 
  - ### Adicionar um modo novo, onde seja mais dificil de ganhar do computador, trazendo um novo desafio para o jogador!
     - ### Para realizar esse modo o algotimo irá realizar calculos matemáticos para ganhar do usuário, tornando assim impossível dele ganhar.
- - ### Deixar o usuário escolher como será a peça do tabuleiro ex: 🔴, ⚫, 👾, 🧑‍💻 ...
+ - ### Multiplayer online
