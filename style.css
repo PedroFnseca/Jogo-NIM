@@ -30,7 +30,7 @@ p{
     border: none;
     cursor: pointer;
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 18px;
     background-color: #150e77;
     border: solid 0.1px rgba(0, 0, 0, 0.072);
     padding: 5px;
@@ -57,6 +57,7 @@ input{
 }
 
 #itens{
+    font-size: 17px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -77,11 +78,11 @@ footer{
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 select{
     padding: 2px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 20px;
 }
