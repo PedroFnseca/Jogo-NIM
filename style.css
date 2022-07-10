@@ -71,10 +71,10 @@ a{
 }
 
 footer{
-    bottom: 10px;
+    bottom: 5px;
     position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
