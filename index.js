@@ -97,7 +97,6 @@ function telaGanhador(){
 
 //===============================================//
 
-
 var rodada_pcs, max_pcs, vencedor
 
 
@@ -317,3 +316,10 @@ function ganhador(){
         parabens.innerHTML = '<h2>DEU BUG AAAAA</h2>'
     }
 }
+
+
+document.addEventListener('keypress', function(e){
+    if(e.which == 13){
+        jogoNim()
+    }
+ }, false);
