@@ -180,6 +180,8 @@ function jogoNim(){
         imprime()
     }
 
+    // Limpa  
+    document.getElementById('pcs-user').value = ''
 }
 
 
