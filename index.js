@@ -260,12 +260,12 @@ function escolhe_jogada(){
 
     msg.innerHTML = ''
 
-    aux = Math.floor(Math.random() * 2) // Aleatoriza quem joga
+    is_jogador_inicia = (rodada_pcs % (max_pcs+1)) == 0
 
-    if (aux == 1 && pcs_iniciais == rodada_pcs){
+    if (is_jogador_inicia && pcs_iniciais == rodada_pcs){
         msg.innerHTML = 'Você começa'
     }
-    else if(aux != 1 && pcs_iniciais == rodada_pcs){
+    else if(!is_jogador_inicia && pcs_iniciais == rodada_pcs){
         msg.innerText = 'O PC começou'
         aux = modo_jogo === 'normal' ? jogada_pc_normal() : jogada_pc_dificil()
         rodada_pcs -= aux
