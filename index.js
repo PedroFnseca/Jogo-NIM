@@ -119,8 +119,14 @@ function verifica(is_normal){
     value_rodadaPcs = parseInt(rodada_pcs.value) 
     value_maxPcs = parseInt(max_pcs.value)
 
+    // Verfica se o user digitou algum valor
+    if (max_pcs.value.length == 0 || max_pcs.value.length == 0){
+        alert('Digite algum valor para começar')
+        return
+    }
+
     // Verifica se o usuario nao digitou um valor invalido em qtd total de peças
-    if (value_rodadaPcs <= 0){
+    else if (value_rodadaPcs < 1){
         alert('Digite um valor maior que 1 para a rodada')
 
         rodada_pcs.value = '' // Limpa a quantidade de peças da partida
@@ -128,16 +134,10 @@ function verifica(is_normal){
     }
 
     // Verifica se o user colocou um valor invalido que nao possibilite o jogo rodar
-    else if(value_maxPcs >= value_rodadaPcs || value_maxPcs <= 0){
-        alert(`Impossivel jogar nesse modo!\nTente um valor menor que a quantidade de peças por rodada: ${value_rodadaPcs} e maior que 0`)
+    else if(value_maxPcs >= value_rodadaPcs || value_maxPcs <= 1){
+        alert(`Impossivel jogar nesse modo!\nTente um valor menor que a quantidade de peças por rodada: ${value_rodadaPcs} e maior que 1`)
 
         max_pcs.value = '' // Limpa a a quantidade de peças por rodada
-        return
-    }
-
-    // Verfica se o user digitou algum valor
-    else if (max_pcs.value.length == 0 || max_pcs.value.length == 0){
-        alert('Digite algum valor para começar')
         return
     }
 
