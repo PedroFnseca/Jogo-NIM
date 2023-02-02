@@ -48,7 +48,8 @@ function telaParametros(){
 
     container.innerHTML += '<br><br>'
 
-    container.innerHTML += '<button onclick="verifica()" class="btn">OK</button>'
+    container.innerHTML += '<button onclick="verifica(true)" class="btn">Modo normal</button>'
+    container.innerHTML += '<button onclick="verifica(false)" class="btn">Modo dificil</button>'
 }
 
 
@@ -97,10 +98,10 @@ function telaGanhador(){
 
 //===============================================//
 
-var rodada_pcs, max_pcs, vencedor
+var rodada_pcs, max_pcs, vencedor, modo_jogo
 
 
-function verifica(){
+function verifica(is_normal){
     // Onde se faz as verificações dos parametros e passa para a proxima tela se tudo estiver de acordo
 
 
@@ -141,6 +142,8 @@ function verifica(){
 
     // Se ocorrer tudo certo o jogo irá começar
     else{
+        console.log(is_normal)
+        is_normal ? modo_jogo = 'normal' : modo_jogo = 'dificil'
         max_pcs = parseInt(max_pcs.value)
         rodada_pcs = parseInt(rodada_pcs.value)
         telaJogo()
@@ -253,12 +256,12 @@ function escolhe_jogada(){
     }
     else if(aux != 1 && pcs_iniciais == rodada_pcs){
         msg.innerText = 'O PC começou'
-        aux = jogada_pc()
+        aux = modo_jogo === 'normal' ? jogada_pc_normal() : jogada_pc_dificil()
         rodada_pcs -= aux
         msg.innerText += ` e retirou ${aux} peças.`
     }
     else{
-        aux = jogada_pc()
+        aux = modo_jogo === 'normal' ? jogada_pc_normal() : jogada_pc_dificil()
         rodada_pcs -= aux
         msg.innerText = `PC retirou ${aux} peças.`
     }
@@ -275,7 +278,8 @@ function seAcabou(ganhador){
     }
 }
 
-function jogada_pc(){
+function jogada_pc_normal(){
+    console.log('modo normal')
     // Funçãoq que assegura o cerebro do pc
 
     // Caso dê para o computador retirar tudo ele retira
@@ -298,6 +302,22 @@ function jogada_pc(){
 
         return aux
     }
+}
+
+function jogada_pc_dificil(){
+    console.log('modo dificil')
+    let computadorRemove = 1
+
+    while (computadorRemove != max_pcs){
+        if ((rodada_pcs - computadorRemove) % (max_pcs +1) == 0){
+            return computadorRemove
+        }
+        else{
+            computadorRemove = computadorRemove + 1
+        }
+    }
+
+    return computadorRemove
 }
 
 function ganhador(){
