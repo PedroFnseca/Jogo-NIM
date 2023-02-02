@@ -104,6 +104,7 @@ var rodada_pcs, max_pcs, vencedor, modo_jogo
 function verifica(is_normal){
     // Onde se faz as verificações dos parametros e passa para a proxima tela se tudo estiver de acordo
 
+    is_normal ? modo_jogo = 'normal' : modo_jogo = 'dificil'
 
     // Atribuindo valor para o emoji
     let select = document.getElementById('emoji') 
@@ -121,6 +122,7 @@ function verifica(is_normal){
         alert('Digite um valor maior que 1 para a rodada')
 
         rodada_pcs.value = '' // Limpa a quantidade de peças da partida
+        return
     }
 
     // Verifica se o user colocou um valor invalido que nao possibilite o jogo rodar
@@ -128,27 +130,34 @@ function verifica(is_normal){
         alert(`Impossivel jogar nesse modo!\nTente um valor menor que a quantidade de peças por rodada: ${value_rodadaPcs} e maior que 0`)
 
         max_pcs.value = '' // Limpa a a quantidade de peças por rodada
+        return
     }
 
     // Verfica se o user digitou algum valor
     else if (max_pcs.value.length == 0 || max_pcs.value.length == 0){
         alert('Digite algum valor para começar')
+        return
     }
 
     else if (rodada_pcs.value >= 150){
         alert('Esse valor irá travar o seu pc/celular \n\nDigite um valor menor que 150 em total de peças.')
         rodada_pcs.value = ''
+        return
+    }
+
+    if(modo_jogo == 'dificil'){
+        if(rodada_pcs.value < 10){
+            alert('Digite um valor maior que 10 para o modo dificil')
+            rodada_pcs.value = ''
+            max_pcs.value = ''
+            return
+        }
     }
 
     // Se ocorrer tudo certo o jogo irá começar
-    else{
-        console.log(is_normal)
-        is_normal ? modo_jogo = 'normal' : modo_jogo = 'dificil'
-        max_pcs = parseInt(max_pcs.value)
-        rodada_pcs = parseInt(rodada_pcs.value)
-        telaJogo()
-    }
-
+    max_pcs = parseInt(max_pcs.value)
+    rodada_pcs = parseInt(rodada_pcs.value)
+    telaJogo()
 }
 
 
@@ -279,7 +288,6 @@ function seAcabou(ganhador){
 }
 
 function jogada_pc_normal(){
-    console.log('modo normal')
     // Funçãoq que assegura o cerebro do pc
 
     // Caso dê para o computador retirar tudo ele retira
@@ -305,7 +313,6 @@ function jogada_pc_normal(){
 }
 
 function jogada_pc_dificil(){
-    console.log('modo dificil')
     let computadorRemove = 1
 
     while (computadorRemove != max_pcs){
@@ -330,10 +337,16 @@ function ganhador(){
     if (vencedor == 'pc'){
         parabens.innerHTML = '<h2>Poxa que pena! 😞</h2>'
         parabens.innerHTML += '<h3>Não foi dessa vez</h3>'
+        if(modo_jogo == 'dificil'){
+            parabens.innerHTML += '<h2>Eu sou muito esperto!</h2>'
+        }
     }
     else if(vencedor == 'usuario'){
         parabens.innerHTML = '<h2>Parabéns você ganhou! 😁🎉</h2>'
         parabens.innerHTML += '<h3>Você é um(a) gênio(a)!</h3>'
+        if(modo_jogo == 'dificil'){
+            parabens.innerHTML += '<h2>Foi sorte!</h2>'
+        }
     }
     else{
         parabens.innerHTML = '<h2>DEU BUG AAAAA</h2>'
