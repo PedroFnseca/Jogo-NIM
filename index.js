@@ -87,8 +87,10 @@ function telaGanhador(){
 
     container.innerHTML += '<div id="jogar-novamente">'
     
-    container.innerHTML += '<label for="jogar-dnv">Que tal mais uma partida?</label>'
-    container.innerHTML += '<button onclick="telaParametros()" class="btn">Vamos</button>'
+    // if(modo_jogo !== 'dificil'){
+        container.innerHTML += '<label for="jogar-dnv">Que tal mais uma partida?</label>'
+        container.innerHTML += '<button onclick="telaParametros()" class="btn">Vamos</button>'
+    // }
 
     container.innerHTML += '</div>'
 
@@ -338,18 +340,22 @@ function ganhador(){
         parabens.innerHTML = '<h2>Poxa que pena! 😞</h2>'
         parabens.innerHTML += '<h3>Não foi dessa vez</h3>'
         if(modo_jogo == 'dificil'){
-            parabens.innerHTML += '<h2>Eu sou muito esperto!</h2>'
+            parabens.innerHTML += '<h3>Achou que não seria dificil?</h3>'
         }
+        parabens.innerHTML += '<iframe src="https://giphy.com/embed/jAe22Ec5iICCk"></iframe>'
     }
     else if(vencedor == 'usuario'){
         parabens.innerHTML = '<h2>Parabéns você ganhou! 😁🎉</h2>'
         parabens.innerHTML += '<h3>Você é um(a) gênio(a)!</h3>'
-        if(modo_jogo == 'dificil'){
-            parabens.innerHTML += '<h2>Foi sorte!</h2>'
-        }
+        parabens.innerHTML += '<iframe src="https://giphy.com/embed/102h4wsmCG2s12"></iframe>'
+        // if(modo_jogo == 'dificil'){
+        //     container.innerHTML += '<br>'
+        //     container.innerHTML += '<label for="jogar-dnv">Que tal ir no modo impossivel?</label>'
+        //     container.innerHTML += '<button onclick="telaParametros()" class="btn">Vamos</button>'
+        // }
     }
     else{
-        parabens.innerHTML = '<h2>DEU BUG AAAAA</h2>'
+        parabens.innerHTML = '<h1>DEU BUG AAAAA</h1>'
     }
 }
 
