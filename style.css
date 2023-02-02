@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(44, 44, 153) 20%, rgba(25,126,147,1) 1110%);
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    background: #F5DEB3;
+    font-family: inter;
+}
+
+*{
+ transition: all .2s;
 }
 
 #container{
     width: 65vw;
-    background-color: #07e6ff1a;
+    background-color: #F4A460;
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
     text-align: center;
     padding: 10px;
 
-    border: solid 1px rgba(0, 0, 0, 0.036);
+    border: solid 3px rgba(0, 0, 0, 0.036);
     border-radius: 30px;
-    box-shadow: 10px 15px 10px 5px rgba(0, 0, 0, 0.524);
     flex-wrap: wrap;
+
+    -webkit-box-shadow: 3px 2px 14px 0px rgba(242,155,155,1);
+    -moz-box-shadow: 3px 2px 14px 0px rgba(242,155,155,1);
+    box-shadow: 3px 2px 14px 0px rgba(242,155,155,1);
 
     position: absolute;
     top: 50%;
@@ -31,12 +38,16 @@ p{
     cursor: pointer;
     color: whitesmoke;
     font-size: 18px;
-    background-color: #150e77;
+    background-color: #D2691E;
     border: solid 0.1px rgba(0, 0, 0, 0.072);
     padding: 5px;
     border-radius: 5px;
     box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.587);
     margin-left: 5px;
+}
+.btn:hover{
+    background-color: #b25817;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.587);
 }
 
 input{
@@ -47,6 +58,20 @@ input{
     width: 25%;
     margin-left: 5px;
 }
+input:focus, input:focus, select:focus, input:hover {
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(237,61,61,1);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(237,61,61,1);
+    box-shadow: 0px 0px 14px 0px rgba(237,61,61,1);
+
+    border: 0 none;
+    outline: 0;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .title-input{
     font-size: 20px;
     font-weight: bold;
